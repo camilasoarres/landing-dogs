@@ -6,16 +6,17 @@
 	<link rel="stylesheet" href="adoptModal.css">
 	<link rel="stylesheet" href="https://use.typekit.net/eqk2gym.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/little-paws.png" />
 </head>
-<body id="body">
+<body id="body" onload="renderSlide()">
 	<main>
 		<div class="overlay">
 			<div class="modal">
 				<a href="../index.html"><button class="close-modal"></button></a>
-				<div class="first-content">
+				<div class="first-content" id="first-content">
 					<div id="dog-profile">
-						<img class="profile-dog" src="../assets/luna.png" />
-						<p class="profile-text">Luna - 5 meses</p>
+						<!-- <img class="profile-dog" src="../assets/luna.png" />
+						<p class="profile-text">Luna - 5 meses</p> -->
 					</div>
 					<div class="text-box">
 						<p class="profile-title">Pronto para ter um novo amiguinho?</p>

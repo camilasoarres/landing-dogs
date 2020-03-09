@@ -127,18 +127,19 @@ a {
 	border-radius: 35px;
 	border: none;
 	color: #575757;
+	background: #F2F2F2;
 	outline: none;
 	cursor: pointer;
 }
 
 #button-yes:hover {
 	background-color: #00CA88;
-	color: #fff;
+	/* color: #fff; */
 }
 
 #button-no:hover {
 	background-color: #FF0000;
-	color: #fff;
+	/* color: #fff; */
 }
 
 .profile-adopt_button {

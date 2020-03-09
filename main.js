@@ -3,6 +3,9 @@ const menu = document.getElementById("menu");
 const openButton = document.getElementById("mobile-menu");
 const closeButton = document.getElementById("close-menu");
 
+let selectedDogDescription = 'undefined';
+let selectedDogImage;
+
 function openMenu() {
 	body.style.overflow = "hidden";
 	menu.style.display = "flex";
@@ -11,10 +14,12 @@ function openMenu() {
 }
 
 function closeMenu() {
-	menu.style.display = "none";
-	body.style.overflow = "visible";
-	openButton.style.display = "flex";
-	closeButton.style.display = "none";
+	if (window.innerWidth < 780) {
+		menu.style.display = "none";
+		body.style.overflow = "visible";
+		openButton.style.display = "flex";
+		closeButton.style.display = "none";
+	}
 }
 
 let slideIndex = 1;
@@ -47,51 +52,40 @@ function yesOption() {
 	const yes = document.getElementById("button-yes");
 	const no = document.getElementById("button-no");
 
-	yes.style.background = "pink";
-	no.style.display = "red";
+	yes.style.background = "#00CA88";
+	no.style.background = "#F2F2F2";
+	yes.style.color = "#fff";
+	no.style.color = "#575757";
 }
 
 function noOption() {
 	const yes = document.getElementById("button-yes");
 	const no = document.getElementById("button-no");
+
+	yes.style.background = "#F2F2F2";
+	no.style.background = "#FF0000";
+	yes.style.color = "#575757";
+	no.style.color = "#fff";
 }
 
-
-
-
 function selectDog(dog) {
-	const div = document.getElementById('dog-profile');
-	if(dog === 'luna') {
-		let tempItem = document.createElement('div');
-		let title = renderItem('span', item);
-		let deleteTempButton = renderItem('button', 'x');
+	console.log(dog);
+}
 
-		deleteTempButton.setAttribute('onclick', 'deleteTemp()');
+function renderSlide() {
+	// dogsArr.map((dog) => {
+	// 	let Item = document.getElementById('first-content');
+	// 	let dogItem = document.getElementById('dog-profile');
+	// 	let title = renderItem('p', selectedDogDescription);
+	// 	let age = renderItem('p', selectedDogImage);
+	// 	let image = document.createElement("img");
+	// 	image.setAttribute("src", selectedDogImage);
+	// 	deleteTempButton.setAttribute('src', 'deleteTemp()');
 
-		tempItem.appendChild(title);
-		tempItem.appendChild(deleteTempButton);
-		tempList.appendChild(tempItem);
-		div.appendChild(tempList);
-
-	} else if (dog === 'duque') {
-		console.log('duque');
-	} else if (dog === 'perola') {
-		console.log('Pérola');
-	} else if (dog === 'thor') {
-		console.log('thor');
-	} else if (dog === 'rex') {
-		console.log('rex');
-	} else if (dog === 'vilma') {
-		console.log('vilma');
-	} else if (dog === 'princesa') {
-		console.log('princesa');
-	} else if (dog === 'eva') {
-		console.log('eva');
-	} else if (dog === 'puppy') {
-		console.log('puppy');
-	} else if (dog === 'mike') {
-		console.log('mike');
-	}
+	// 	dogItem.appendChild(title);
+	// 	dogItem.appendChild(age);
+	// 	Item.appendChild(dogItem);
+	// });
 }
 
 function renderItem(el, txt) {
