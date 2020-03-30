@@ -109,12 +109,10 @@ a {
 
 #button-yes:hover {
 	background-color: #00CA88;
-	/* color: #fff; */
 }
 
 #button-no:hover {
 	background-color: #FF0000;
-	/* color: #fff; */
 }
 
 .profile-adopt_button {
@@ -138,6 +136,7 @@ a {
 @media screen and (max-width: 768px) {
 	.modal {
 		width: 80%;
+		height: 90vh;
 	}
 }
 
@@ -161,10 +160,13 @@ a {
 		font-size: .85rem;
 	}
 	.profile-ask {
+    display: flex;
+		flex-direction: column;
 		font-size: 1.2rem;
 		margin-top: .5rem;
 	}
 	.profile-ask button {
+		width: 100%;
 		margin: 0;
 		margin-top: .75rem;
 		padding: .75rem;

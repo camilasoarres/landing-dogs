@@ -110,6 +110,12 @@ header {
 	font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+	.logo-text, .logo-text_footer {
+		margin-left: 0;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	header {
 		width: calc(100% - 2rem);
@@ -540,6 +546,27 @@ aside div {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+	.slide-wrapper {
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+	.slidebox_wrapper {
+		width: 200px;
+		height: 200px;
+	}
+	.pagination__prev {
+		left: -2.5rem;
+	}
+	.pagination__next {
+		right: -2.5rem;
+	}
+	.sixth-circle {
+		top: -2rem;
+		right: -2.5rem;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	#adopt {
 		justify-content: space-between;
@@ -586,7 +613,7 @@ aside div {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 50%;
+		width: 37%;
 	}
 	.adopt-button {
 		display: flex;
@@ -676,6 +703,16 @@ footer {
 	color: #00CA88;
 	font-size: 2rem;
 	font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-menu-list li a {
+		font-size: 1rem;
+	}
+
+	.footer-adress {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (max-width: 768px) {

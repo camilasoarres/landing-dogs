@@ -68,26 +68,6 @@ function noOption() {
 	no.style.color = "#fff";
 }
 
-function selectDog(dog) {
-	console.log(dog);
-}
-
-function renderSlide() {
-	// dogsArr.map((dog) => {
-	// 	let Item = document.getElementById('first-content');
-	// 	let dogItem = document.getElementById('dog-profile');
-	// 	let title = renderItem('p', selectedDogDescription);
-	// 	let age = renderItem('p', selectedDogImage);
-	// 	let image = document.createElement("img");
-	// 	image.setAttribute("src", selectedDogImage);
-	// 	deleteTempButton.setAttribute('src', 'deleteTemp()');
-
-	// 	dogItem.appendChild(title);
-	// 	dogItem.appendChild(age);
-	// 	Item.appendChild(dogItem);
-	// });
-}
-
 function renderItem(el, txt) {
 	let listItem = document.createElement(el);
 	let itemText = document.createTextNode(txt);
